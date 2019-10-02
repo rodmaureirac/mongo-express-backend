@@ -1,0 +1,22 @@
+{
+  "name": "mongo-express-backend",
+  "version": "1.0.0",
+  "description": "A simple way to authenticate and create private routes on your webserver",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "nodemon server/server.js",
+    "prd": "node server/server.js"
+  },
+  "author": "Rodrigo Maureira Contreras <rodmaureirac@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.1",
+    "saslprep": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}

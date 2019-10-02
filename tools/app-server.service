@@ -1,0 +1,21 @@
+# Servicio para arrancar la aplicación
+# meidante systemd
+# copiar en /lib/systemd/system/
+
+[Unit]
+Description=NodeJS application service
+After=network-online.target
+
+[Service]
+Restart=on-failure
+Type=forking
+
+# Donde instaló el aplicativo
+WorkingDirectory=/var/nodejs/server/
+ExecStart=/usr/bin/npm run prd
+# Usuario
+# User=nobody
+# Group=nobody
+
+[Install]
+WantedBy=multi-user.target
