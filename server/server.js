@@ -56,4 +56,4 @@ server.start = async (port=3000, dbhost='localhost', dbusr='usr', dbpwd='pwd', d
 }
 
 /* Inicia el servidor */
-server.start(3000, '10.8.0.1', 'test-usr', 'frijolito', 'test-db')
+server.start()
